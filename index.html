@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Github Profile Readme Generator || Readme Generator - Abdul Qadir</title>
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/octicons/1024/repo-forked-512.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="img">
+            <img src="C:\Users\DELL\Downloads\family\20210926_143339.png"
+                alt="qaidr">
+        </div>
+        <h1>Github profile README Generator</h1>
+        <div class="btn">
+            <a href="https://github.com/Abdulabdulqadir/Github-Readme-Generator" target="_blank"><button><i class="fa fa-star"></i> Star This Repo</button></a>
+            <a href="https://github.com/Abdulabdulqadir" target="_blank"><button><i class="fa fa-user"></i> Follow Me on Github</button></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="banner">
+            <h1>Readme Banner</h1>
+            <input type="text" placeholder="Enter url of Banner Image" id="image">
+        </div>
+        <div class="title">
+            <h1>Title</h1>
+            <div class="input">
+                <input type="text" placeholder="Hi 👋 I am" style="margin-right: 20px;" id="row11">
+                <input type="text" placeholder="Abdul Qadir" id="row12">
+            </div>
+        </div>
+        <div class="title">
+            <h1>Sub-Title</h1>
+            <div class="input">
+                <input type="text" placeholder="I am Front End Web Developer" style="width: 70%;" id="row21">
+            </div>
+        </div>
+        <div class="work">
+            <h1>Work</h1>
+            <div class="input">
+                <input type="text" placeholder="🔭 I am Currently Working on" class="quest" id="row31">
+                <input type="text" placeholder="Project Name" class="pro" id="row32">
+                <input type="text" placeholder="Project Link" class="link" id="row32link">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="👯 I'm looking to collaborate on" class="quest" id="row41">
+                <input type="text" placeholder="Project Name" class="pro" id="row42">
+                <input type="text" placeholder="Project Link" class="link" id="row42link">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="🤝 I'm looking for help with" class="quest" id="row51">
+                <input type="text" placeholder="Project Name" class="pro" id="row52">
+                <input type="text" placeholder="Project Link" class="link" id="row52link">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="👨‍💻 All my projects are available on" class="quest" id="row91">
+                <input type="text" placeholder="Github" class="pro" id="row92">
+                <input type="text" placeholder="Github Link" class="link" id="row92link">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="🌱 I'm currently learning" class="single" id="row61">
+                <input type="text" placeholder="Java Script" class="singleAns" id="row62">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="💬 Ask me about" class="single" id="row71">
+                <input type="text" placeholder="Front End Development" class="singleAns" id="row72">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="📫 How to reach me" class="single" id="row81">
+                <input type="text" placeholder="abdulqadirkhaskheli700@gmail.com" class="singleAns" id="row82">
+            </div>
+        </div>
+        <div class="work2">
+            <h1>Social</h1>
+            <div class="links">
+                <div class="input">
+                    <input type="text" placeholder="Github UserName" id="github">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Twitter UserName" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+            </div>
+            <div class="links">
+                <div class="input">
+                    <input type="text" placeholder="dev .to userName" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Code pen UserName" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+            </div>
+            <div class="links">
+                <div class="input">
+                    <input type="text" placeholder="Stack overflow User Id" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="LinkedIn UserName" id="linkedin">
+                </div>
+            </div>
+            <div class="links">
+                <div class="input">
+                    <input type="text" placeholder="Instagram User Name" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Youtube Channel Name" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+            </div>
+            <div class="links">
+                <div class="input">
+                    <input type="text" placeholder="Hackerrank  UserName" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="LeetCode UserName" onclick="alert('Sorry, This feature not available')" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="b" onclick="copy()">Copy README code</button>
+    <div class="footer">
+        <h1>Abdul Qadir</h1>
+        <p>Made in Pakistan PK</p>
+    </div>
+    <img class="n" id="no"
+        src="C:\Users\DELL\Downloads\family\20210926_143339.png"
+        alt="qadir">
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('no');
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+                header.style.opacity = '1';
+            } else {
+                header.style.opacity = '0';
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
